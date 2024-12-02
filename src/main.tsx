@@ -3,12 +3,12 @@ import { createRoot } from "react-dom/client";
 import "./index.css";
 import "@radix-ui/themes/styles.css";
 import App from "./App.tsx";
-import { Theme } from "@radix-ui/themes";
+import { CustomSystemThemeSelector } from "./components/CustomSystemThemeSelector.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Theme appearance="dark">
+    <CustomSystemThemeSelector>
       <App />
-    </Theme>
+    </CustomSystemThemeSelector>
   </StrictMode>
 );
